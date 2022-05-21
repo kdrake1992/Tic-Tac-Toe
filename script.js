@@ -1,5 +1,6 @@
-let startingMenu = document.getElementsByClassName("startingMenu");
-let menu = document.getElementsByClassName("menu");
+let startingMenu = document.getElementById("startingMenu");
+let menu = document.getElementById("menu");
+let game = document.getElementById("game");
 
 let startButton = document.getElementById("continue");
 let playerOne = document.getElementById("playerOne");
@@ -29,12 +30,18 @@ let displayController = (() => {
     };
 })();
 
-startButton.addEventListener('click', e=> {
-    console.log("Test")
+startButton.addEventListener('click', e => {
+    console.log(e);
+    menu.style.display = "flex";
+    startingMenu.style.display = "none";
 })
 
 submitButton.addEventListener("click", e=> {
     e.preventDefault();
     console.log(playerOne.value);
     console.log(playerTwo.value);
+
+    menu.style.display = "none";
+    game.style.display = "grid"
+
 })

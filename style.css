@@ -20,7 +20,7 @@ button {
     padding: 3px;
 }
 
-.startingMenu {
+#startingMenu {
     align-self: center;
 
     display: flex;
@@ -35,14 +35,16 @@ button {
     border-radius: 10px;
 }
 
-.startingMenu p {
+#startingMenu p {
     font-size: 10px;
 }
 
-.menu {
+#menu {
+    display: none;
     align-self: center;
+    justify-content: center;
 
-    width: 350px;
+    width: 300px;
     padding: 10px;
     background-color: aliceblue;
     border: 1px solid black;
@@ -53,4 +55,13 @@ form {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+#game {
+    align-self: center;
+    justify-content: center;
+
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(3,1fr);
 }
