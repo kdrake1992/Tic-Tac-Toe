@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
+
+    <div class="startingMenu">
+        <h2>Welcome to Tic-Tac-Toe!</h2>
+        <button id="continue">Press to continue</button>
+        <p>Built by Kevin Drake for The Odin Project</p>
+    </div>
+
+    <div class="menu">
+        <form action="post">
+            <label for="player1">Player One: </label>
+            <input type="text" id="playerOne" placeholder="Player One" value="Player One" required>
+
+            <label for="player2">Player Two:</label>
+            <input type="text" id="playerTwo" placeholder="Player Two" value="Player Two" required>
+
+            <button type="submit" id="submit">Let's Begin!</button>
+            <button type="reset">Clear</button>
+        </form>
+
+    </div>
+
+    <div class="game">
+
+    </div>
+
+    <div class="ending"></div>
     
     <script src="./script.js"></script>
 </body>
