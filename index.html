@@ -10,7 +10,7 @@
 <body>
 
     <div id="startingMenu">
-        <h2>Welcome to Tic-Tac-Toe!</h2>
+        <h1>Welcome to Tic-Tac-Toe!</h2>
         <button id="continue">Press to continue</button>
         <p>Built by Kevin Drake for The Odin Project</p>
     </div>
@@ -18,10 +18,10 @@
     <div id="menu">
         <form action="post">
             <label for="player1">Player One: </label>
-            <input type="text" id="playerOne" placeholder="Please enter a name" value="Player One" required>
+            <input type="text" id="playerOneForm" placeholder="Please enter a name" value="Player One" required>
 
             <label for="player2">Player Two:</label>
-            <input type="text" id="playerTwo" placeholder="Please enter a name" value="Player Two" required>
+            <input type="text" id="playerTwoForm" placeholder="Please enter a name" value="Player Two" required>
 
             <button type="submit" id="submit">Let's Begin!</button>
             <button type="reset">Reset</button>
@@ -29,12 +29,32 @@
 
     </div>
 
-    <div id="game">
-        <p>Test</p>
+    <div id="topGame">
+        <h2 id="playerOneName">Player One</h2>
+        <h2 id="playerTwoName">Player Two</h2>
 
     </div>
 
-    <div class="ending"></div>
+    <div id="game">
+        <div class="gameBox" id="box1">X</div>
+        <div class="gameBox" id="box2">X</div>
+        <div class="gameBox" id="box3">X</div>
+        <div class="gameBox" id="box4">X</div>
+        <div class="gameBox" id="box5">X</div>
+        <div class="gameBox" id="box6">X</div>
+        <div class="gameBox" id="box7">X</div>
+        <div class="gameBox" id="box8">X</div>
+        <div class="gameBox" id="box9">X</div>
+
+    </div>
+
+    <div id="bottomMenu">
+        <button id="restart">Restart</button>
+    </div>
+
+    <div class="ending">
+
+    </div>
     
     <script src="./script.js"></script>
 </body>

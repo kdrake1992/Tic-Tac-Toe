@@ -17,7 +17,7 @@ body {
 
 button {
     border-radius: 10px;
-    padding: 3px;
+    padding: 4px;
 }
 
 #startingMenu {
@@ -26,7 +26,7 @@ button {
     display: flex;
     flex-direction: column;
 
-    width: 300px;
+    width: 350px;
     gap: 10px;
     padding: 10px;
     background-color: aliceblue;
@@ -57,11 +57,46 @@ form {
     gap: 8px;
 }
 
+#topGame {
+    display: none;
+    justify-content: space-around;
+
+}
+
+#topGame h2 {
+    background-color: aliceblue;
+
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px
+}
+
 #game {
+    margin-top: 25px;
     align-self: center;
     justify-content: center;
 
     display: none;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:  repeat(3,1fr);
+    background-color: aliceblue;
+}
+
+.gameBox {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+}
+
+#bottomMenu {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
 }
